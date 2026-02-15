@@ -5,12 +5,17 @@
 :root {
     --primary-color: #c58c85;
     --secondary-color: #a1665e;
+    --soft-bg: #fdf6f5;
+    --text-dark: #3a3a3a;
 }
 body {
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     width: 100%;
+    color: var(--text-dark);
+    line-height: 1.5;
+    background-color: var(--soft-bg);
 }
 
 .topHeader {
@@ -370,3 +375,114 @@ body {
     color: white;
 }
 
+.all-treatments {
+    padding: 1.5em 1.5em;
+    max-width: 600px;
+    margin: 2em auto;
+    border-radius: 1.5em;
+}
+
+.all-treatments h2 {
+    padding: 0.5em 1em 1em;
+}
+
+.all-treatments_container details {
+    border-bottom: 2px solid rgba(197, 140, 133, 0.5);
+    margin-bottom: 0em;
+    border-radius: 0;
+    overflow: hidden;
+    transform: all 0.4s ease;
+    border-radius: 2em;
+}
+
+details[open] {
+    background-color: #fdfaf9;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+summary {
+    list-style-type: none;
+    padding: 1.25em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    color: var(--text-dark);
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.acc-content {
+    padding: 0 2em 2.5em 3em;
+    animation: deslizar 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes deslizar {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.acc-content ul {
+    list-style-type: none;
+    margin-bottom: 2em;
+    padding: 0;
+    width: 100%;
+}
+
+.acc-content ul li {
+    padding: 0.5em 0;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acc-content ul li:last-child {
+    border-bottom: none;
+}
+
+.acc-content ul li::before {
+    content: '✓';
+    color: var(--secondary-color);
+    margin-right: 0.5em;
+    font-weight: bold;
+}
+
+.cta-acc {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.7em 1.25em;
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 0.7em;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    box-shadow: 2px 3px 4px rgba(0,0,0,0.3);
+}
+
+.cta-acc:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-1px);
+    box-shadow: 3px 5px 5px rgba(161, 102, 94, 0.3);
+}

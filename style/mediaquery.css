@@ -218,6 +218,38 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    .all-treatments {
+        max-width: 1200px;
+    }
+
+    .all-treatments_container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5em;
+    }
+
+    .all-treatments_container details {
+        flex: 1 1 calc(33% - 1.5em);
+        min-width: 350px;
+        height: fit-content;
+        border-radius: 1em;
+        border-top: 1px solid rgba(197, 140, 133, 0.2);
+        border-right: 1px solid rgba(197, 140, 133, 0.2);
+        border-left: 1px solid rgba(197, 140, 133, 0.2);
+        transition: box-shadow 0.3s ease;
+    }
+
+    summary {
+        padding: 1.5em 0;
+        letter-spacing: 2px;
+    }
+
+    .acc-content {
+        padding: 0 2em 2em;
+    }
 }
 
 
