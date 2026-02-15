@@ -380,11 +380,11 @@ body {
 
 .all-treatments_container details {
     border-bottom: 2px solid rgba(197, 140, 133, 0.5);
-    margin-bottom: 0em;
     border-radius: 0;
     overflow: hidden;
     transform: all 0.4s ease;
     border-radius: 2em;
+    margin-bottom: 1em;
 }
 
 details[open] {
