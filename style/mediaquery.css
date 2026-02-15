@@ -1,0 +1,223 @@
+@media screen and (min-width: 30em) {
+    body {
+        font-size: 17px;
+    }
+    .topHeader {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        gap: 0.5em;
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+
+    .topHeader_menu {
+        display: flex;
+        width: auto;
+        background-color: transparent;
+    }
+
+    .topHeader_menu ul {
+        flex-direction: row;
+        gap: 1.5em;
+        margin: 0;
+    }
+    
+    .topHeader_menu a {
+        color: var(--primary-color);
+    }
+
+    .topHeader_logo img {
+        height: 100px;
+    }
+
+    .topHeader_menu a {
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .topHeader_menu a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 5px;
+        left: 50%;
+        background-color: var(--primary-color);
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    .topHeader_menu a:hover::after {
+        width: 70%;
+    }
+
+    .topHeader_menu a:hover {
+        color: var(--secondary-color);
+    }
+
+    .treatment_grid {
+        gap: 1em;
+    }
+
+    .treatment_title {
+        font-size: 2em;
+    }
+
+    .treatment_card:hover .treatment_img img {
+        transform: scale(1.03)
+    }
+
+    .cta_view-all {
+        padding: 0.8em 2rem;
+        text-decoration: none;
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .topHeader {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 80%;
+        margin: 0 auto;
+        gap: 0.5em;
+    }
+
+    .cta {
+        margin-top: 0;
+        margin-left: 1.5em;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+
+    .topHeader_menu {
+        display: flex;
+        width: auto;
+        background-color: transparent;
+    }
+
+    .topHeader_menu ul {
+        flex-direction: row;
+        gap: 1.5em;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .topHeader_menu li {
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    .topHeader_menu a {
+        color: var(--primary-color);
+    }
+
+    .topHeader_menu a {
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .topHeader_menu a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 5px;
+        left: 50%;
+        background-color: var(--primary-color);
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    .topHeader_menu a:hover::after {
+        width: 70%;
+    }
+
+    .topHeader_menu a:hover {
+        color: var(--secondary-color);
+    }
+
+    .inicio {
+        padding: 0 1em;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .inicio_container {
+        padding: 1em;
+        flex: 0 1 500px;
+    }
+
+    .inicio_fotoPrincipal {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .inicio_fotoPrincipal img {
+        max-width: 550px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .inicio_container_title {
+        font-size: 2em;
+    }
+
+    .inicio_container p {
+        font-size: 1.1em;
+    }
+
+    .inicio_container a {
+        font-size: 0.9em;
+    }
+
+    .treatment {
+        padding-top: 2em;
+    }
+
+    .treatment_allCards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .treatment_card {
+        flex: 1;
+        max-width: 350px;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .treatment_allCards {
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
