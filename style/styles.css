@@ -394,7 +394,7 @@ details[open] {
 
 summary {
     list-style-type: none;
-    padding: 1.25em 0;
+    padding: 1.25em 1.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -406,6 +406,22 @@ summary {
     letter-spacing: 1px;
     transition: all 0.3s ease;
     cursor: pointer;
+}
+
+summary::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    transform: rotate(45deg) translateY(-3px);
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+}
+
+details[open] summary::after {
+    transform: rotate(-135deg);
+    margin-top: 5px;
 }
 
 summary::-webkit-details-marker {
@@ -423,7 +439,7 @@ summary:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 @keyframes deslizar {
