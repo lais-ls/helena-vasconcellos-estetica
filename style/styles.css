@@ -9,6 +9,10 @@
     --text-dark: #3a3a3a;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     overflow-x: hidden;
 }
@@ -506,4 +510,48 @@ summary:hover {
     background-color: var(--primary-color);
     transform: translateY(-1px);
     box-shadow: 3px 5px 5px rgba(161, 102, 94, 0.3);
+}
+
+.whatsapp-float, .btn-topo {
+    position: fixed;
+    width: 3em;
+    height: 3em;
+    right: 1em;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-float img, .btn-topo img {
+    width: 2em;
+    height: 2em;
+}
+
+.whatsapp-float {
+    z-index: 1000;
+    bottom: 1em;
+    background-color: #35d366;
+}
+
+.btn-topo {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    z-index: 999;
+    bottom: 5em;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #19c44f;
+}
+
+.btn-topo:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+    background-color: var(--secondary-color);
 }

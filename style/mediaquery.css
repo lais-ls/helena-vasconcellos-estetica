@@ -275,6 +275,25 @@
         align-self: center;
         margin-bottom: 0;
     }
+
+    .whatsapp-float, .btn-topo {
+        width: 4em;
+        height: 4em;
+        right: 2em;
+    }
+
+    .whatsapp-float {
+        bottom: 2em;
+    }
+
+    .btn-topo {
+        bottom: 7.5em;
+    }
+
+    .whatsapp-float img, .btn-topo img {
+        width: 2.8em;
+        height: 2.8em;
+    }
 }
 
 
